@@ -4,11 +4,17 @@ $(document).ready(function(){
 for (i=0; i < array.length; i++){
     var container=document.getElementById("card-container");
 
+    var grid=document.createElement("div");
+        grid.className = "row";
+        var column=document.createElement("div");
+            column.className = "col";
     var newCard=document.createElement("div");
          newCard.className = "card";
         var newImage=document.createElement("img");
              newImage.className = "card-img-top";
              newImage.src = array[i].imgsrc;
+             newImage.style.width = array[i].width;
+             newImage.style.margin = "auto";
     newCard.appendChild(newImage);
     var newCardBody=document.createElement("div");
          newCardBody.className = "card-body";
@@ -25,15 +31,16 @@ for (i=0; i < array.length; i++){
             newUList.className = "list-group list-group-flush";
             var newList=document.createElement("li");
                 newList.className = "list-group-item";
-                newList.innerHTML = array[i].anum;
+                newList.innerHTML = "Atomic Number: " + array[i].anum;
             var newList2=document.createElement("li");
                 newList2.className = "list-group-item";
-                newList2.innerHTML = array[i].mass;
+                newList2.innerHTML = "Molar Mass: " + array[i].mass;
         newUList.appendChild(newList);
         newUList.appendChild(newList2);
     newCard.appendChild(newUList);
-
-container.appendChild(newCard);
+column.appendChild(newCard);
+grid.appendChild(column);
+container.appendChild(grid);
 };
 
 });
