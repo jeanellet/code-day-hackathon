@@ -1,4 +1,7 @@
 
+var oxygen = {
+    imgsrc:"o.png"
+    };
 
 /*
 
