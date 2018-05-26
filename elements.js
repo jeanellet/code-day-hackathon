@@ -5,7 +5,7 @@ var oxygen = {
     mass:"16 g/mol",
     fact:"Because water molecules contain Oxygen, Oxygen makes up most of the mass of all living things!",
          factsrc:"http://www.softschools.com/facts/periodic_table/oxygen_facts/181/",
-    width:"152%"
+    width:"76%"
     };
 
 var hydrogen = {
@@ -14,21 +14,25 @@ var hydrogen = {
     mass:"1 g/mol",
     fact:"Hydrogen is the most abundant chemical element un the universe.",
         factsrc:"http://www.softschools.com/facts/periodic_table/hydrogen_facts/177/",
-    width:"120%"
+    width:"60%"
     };
 
 var carbon = {
     imgsrc:"c.png",
     anum:6,
     mass: "12 g/mol",
-    width: "170%"
+    fact:"Carbon is known to form around 10,000,000 different compounds!",
+        factsrc:"http://www.softschools.com/facts/periodic_table/carbon_facts/183/",
+    width: "85%"
     };
 
 var nitrogen = {
     imgsrc:"n.png",
     anum:7,
     mass:"14 g/mol",
-    width:"155%"
+    fact:"Nitrogen is required to create amino acids, DNA, and RNA. Your body is about 3% Nitrogen!",
+        facsrce:"http://www.softschools.com/facts/periodic_table/nitrogen_facts/182/",
+    width:"77.5%"
     };
 
 /*
