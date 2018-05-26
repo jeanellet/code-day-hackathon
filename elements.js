@@ -6,7 +6,7 @@ var oxygen = {
     fact:"Because water molecules contain Oxygen, Oxygen makes up most of the mass of all living things!",
          factsrc:"http://www.softschools.com/facts/periodic_table/oxygen_facts/181/",
     width:"76%",
-    name:"oxygen"
+    name:"Oxygen"
     };
 
 var hydrogen = {
@@ -16,7 +16,7 @@ var hydrogen = {
     fact:"Hydrogen is the most abundant chemical element un the universe.",
         factsrc:"http://www.softschools.com/facts/periodic_table/hydrogen_facts/177/",
     width:"60%",
-    name:"hydrogen"
+    name:"Hydrogen"
     };
 
 var carbon = {
@@ -26,7 +26,7 @@ var carbon = {
     fact:"Carbon is known to form around 10,000,000 different compounds!",
         factsrc:"http://www.softschools.com/facts/periodic_table/carbon_facts/183/",
     width: "85%",
-    name:"carbon"
+    name:"Carbon"
     };
 
 var nitrogen = {
@@ -36,16 +36,9 @@ var nitrogen = {
     fact:"Nitrogen is required to create amino acids, DNA, and RNA. Your body is about 3% Nitrogen!",
         facsrce:"http://www.softschools.com/facts/periodic_table/nitrogen_facts/182/",
     width:"77.5%",
-    name:"nitrogen"
+    name:"Nitrogen"
     };
 
-/*
-
-example:
-javascript objects
-var [elementName]={
-    //add ur attributes here
-}
+var array = [oxygen, hydrogen, carbon, nitrogen];
 
 
-*/
