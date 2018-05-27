@@ -220,7 +220,7 @@ var urea = {
     mass: 60,
     fact: "In huans, urea is removed from the blood in the kidneys and removed from the body in urine.",
         factsrc: "https://wiki.kidzsearch.com/wiki/Urea",
-    name: "Urea (Carbonul Diamide)"
+    name: "Urea (Carbonyl Diamide)"
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
