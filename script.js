@@ -2,7 +2,8 @@
 
 $(document).ready(function(){
 
-    var amountSelected=0;
+    var amountSelected=1;
+    var selectedArray=[];
 
     var first=document.getElementById("one");
 
@@ -21,13 +22,14 @@ $(document).ready(function(){
         for(i=0;i<array.length;i++){
             if(array[i].name==this.id){
                 selectedAtom=array[i];
+                break;
             }
-            break;
+
         }
 
         console.log("selectedaatom="+selectedAtom.width);
 
-        var currentSlot=amountSelected.toString()+"-select";
+        var currentSlot=amountSelected.toString();
 
         var dest=document.getElementById(currentSlot);
 
@@ -41,7 +43,22 @@ $(document).ready(function(){
         copyImg.id=selectedAtom.name;
 
         dest.appendChild(copyImg);
+        selectedArray.push(selectedAtom);
     });
 
+    $("#clear").click(function(){
+        amountSelected=1;
+        selectedArray=[];
+        console.log("clearing");
+        for(i=amountSelected;i<=array.length;i++){
+            document.getElementById(i).innerHTML = "";
+        };
+    });
+
+    $("#mix").click(function(){
+        for(i=0;i<selectedArray.length;i++){
+            console.log(selectedArray[i].name);
+        }
+    });
 
 });
