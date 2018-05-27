@@ -228,76 +228,91 @@ var urea = {
 //ADVANCED
 
 var tricarbonMonoxide{
+    recipe: [carbon, carbon, carbon, oxygen],
     formula: "C3O",
     name: "Tricarbon Monoxide"
 };
 
 var propynal{
+    recipe: [carbon, carbon, carbon, hydrogen, hydrogen, oxygen],
     formula: "C3H2O",
     name: "Propynal"
 };
 
 var nitroxyl{
+    recipe: [nitrogen, hydrogen, oxygen],
     formula:"NHO",
     name: "Nirtoxyl"
 };
 
 var methylamine{
+    recipe: [carbon, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula:"CNH5",
     name: "Methylamine"
 };
 
 var hydrogenCyanide {
+    recipe: [carbon, nitrogen, hydrogen],
     formula: "CNH",
     name: "Hydrogen Cyanide"
 };
 
 var glycolaldehide{
+    recipe: [carbon, carbon, oxygen, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "C2O2H4",
     name: "Glycolaldehide"
 };
 
 var fulmunicAcid{
+    recipe: [carbon, nitrogen, oxygen, hydrogen],
     formula: "CNOH",
     name: "Fulmunic Acid"
 };
 
 var formamide{
+    recipe: [carbon, nitrogen, oxygen, hydrogen, hydrogen, hydrogen],
     formmula: "CNOH3",
     name: "Formamide"
 };
 
 var ethanimine{
+    recipe: [carbon, carbon, nitrogen, oxygen, oxygen, oxygen, oxygen, oxygen],
     formula: "C2NO5",
     name: "Ethanimine"
 };
 
 var cyanoacetylene{
+    recipe: [carbon, carbon, carbon, nitrogen, hydrogen],
     formula: "C3NH",
     name: "Cyanoacetylene"
 };
 
 var cyanamide{
+    recipe: [carbon, nitrogen, nitrogen, hydrogen, hydrogen],
     formula: "CN2H2",
     name: "Cyanamide"
 };
 
 var acrylonitrile {
+    recipe: [carbon, carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     formula: "C3NH3",
     name: "Acrylonitrile"
 };
 
 var acrolein{
+    recipe: [carbon, carbon, carbon, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "C3OH4",
     name: "Acrolein"
 };
 
 var aceylene{
+    recipe: [carbon, carbon, hydrogen, hydrogen],
     formula: "C2H2",
     name: "Aceylene"
 };
 
 var acetonitrile{
+    recipe: [carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     formula: "C2NH3",
     name: "Acetonitrile"
 };
