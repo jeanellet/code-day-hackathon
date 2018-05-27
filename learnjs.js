@@ -3,15 +3,16 @@ $(document).ready(function(){
 
 function populate(){
 var isFound =[];
-for (z=0; z < molecules.length; z++){
-    if (molecules[z].name==localStorage.getItem("discovered-"+z)){
-        isFound.push(true);
-    }
-    else{
-        isFound.push(false);
+
+    function check(x){
+        for (z=0; z < molecules.length; z++){
+            if (molecules[x].name==localStorage.getItem("discovered-"+z)){
+                return true;
+            }
+        }
+        return false;
     }
 
-};
     var container=document.getElementById("card-container");
         var newGrid=document.createElement("div");
             newGrid.className = "row card-group justify-content-md-center";
@@ -66,7 +67,7 @@ var moleculeContainer=document.getElementById("molecule-container");
                 var newCard2=document.createElement("div");
                      newCard2.className = "card";
 
-                if(isFound[x]){
+                if(check(x)){
                     var newImage2=document.createElement("img");
                          newImage2.className = "card-img-top";
                          newImage2.src = molecules[x].imgsrc;
@@ -133,19 +134,18 @@ var moleculeContainer=document.getElementById("molecule-container");
 };
 populate();
         $("#alphabetical").click(function(){
-            console.log("AAA");
             var j=1;
             for(k=0;k<molecules.length-2;k++){
-                console.log(k);
                 if(molecules[k].name>molecules[j].name){
-                    console.log("switching "+molecules[k].name+" and "+molecules[j].name);
                     var temp=molecules[k];
                     molecules[k]=molecules[j];
                     molecules[j]=temp;
-                    k=0;
+                    k=-1;
+                    j=0;
                 }
                 j++;
             }
+
             var container=document.getElementById("card-container").innerHTML="";
             var moleculeContainer=document.getElementById("molecule-container").innerHTML="";
             populate();
