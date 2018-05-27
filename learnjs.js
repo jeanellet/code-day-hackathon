@@ -13,11 +13,11 @@ for (z=0; z < molecules.length; z++){
 };
     var container=document.getElementById("card-container");
         var newGrid=document.createElement("div");
-            newGrid.className = "row card-group";
+            newGrid.className = "row card-group justify-content-md-center";
             newGrid.style = "height:75%";
  for (i=0; i < array.length; i++){
             var newColumn=document.createElement("div");
-                newColumn.className = "col-lg-3 col-md-6";
+                newColumn.className = "col-lg-3 col-md-6 card-deck";
                 var newCard=document.createElement("div");
                      newCard.className = "card";
                     var newImage=document.createElement("img");
