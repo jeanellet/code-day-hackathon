@@ -11,3 +11,10 @@ var y = document.getElementById("titleImage");
         y.style.width = w-scrollWidth;
 
 });
+
+//$(".clickme").click(function(){
+//    return true
+//    $('html,body'.animate({
+//        scrollTop: $(".gohere").offset().top},
+//        'slow'));
+//    });
