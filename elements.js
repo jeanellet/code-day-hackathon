@@ -116,57 +116,67 @@ var formaldehyde = {
 var ammonia = {
     recipe: [nitrogen, hydrogen, hydrogen],
     formula: "NH3",
+    name: "Ammonia"
 };
 
 var hydrazine = {
     recipe: [nitrogen, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "N2H4",
+    name: "Hydrazine"
 };
 
 var dinitrogenMonoxide = {
     recipe: [nitrogen, nitrogen, oxygen],
     formula: "N2O",
+    name: "Dinitrogen Monoxide"
 };
 
 var ethanol = {
     recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, oxygen],
     formula: "C2H6O",
+    name: "Ethanol"
 };
 
 var formicAcid = {
     recipe: [carbon, hydrogen. hydrogen, oxygen, oxygen],
     formula: "CH2O2",
+    name: "Formic Acid"
 };
 
 var methanol = {
     recipe: [carbon, hydrogen, hydrogen, hydrogen, oxygen, hydrogen],
     formula: "CH3OH",
-
+    name: "Methanol"
 };
 
 var molecularHydrogen = {
     recipe: [hydrogen, hydrogen],
     formula: "H2",
+    name: "Molecular Hydrogen"
 };
 
 var molecualarNitrogen = {
     recipe: [nitrogen, nitrogen],
     formula: "N2",
+    name: "Molecular Nitrogen"
 };
 
 var molecularOxygen = {
     recipe: [oxygen, oxygen],
     formula: "O2",
+    name: "Molecular Oxygen"
 };
 
 var ozone = {
     recipe: [oxygen, oxygen, oxygen],
     formula: "O3",
+    name: "Ozone"
 };
 
 var urea = {
     recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen],
     formula: "NH2CONH2",
+    name: "Urea"
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
