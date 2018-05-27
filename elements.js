@@ -84,7 +84,7 @@ var carbonMonoxide = {
 };
 
 var methane = {
-    recipe: [carbon, hydrogen, hydrogen, hydrogen],
+    recipe: [carbon, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "methane.png",
     formula: "CH4",
     mass: 16,
@@ -114,48 +114,59 @@ var formaldehyde = {
 };
 
 var ammonia = {
+    recipe: [nitrogen, hydrogen, hydrogen],
     formula: "NH3",
 };
 
 var hydrazine = {
+    recipe: [nitrogen, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "N2H4",
 };
 
 var dinitrogenMonoxide = {
+    recipe: [nitrogen, nitrogen, oxygen],
     formula: "N2O",
 
 };
 
 var ethanol = {
+    recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, oxygen],
     formula: "C2H6O",
 };
 
 var formicAcid = {
+    recipe: [carbon, hydrogen. hydrogen, oxygen, oxygen],
     formula: "CH2O2",
 };
 
 var methanol = {
+    recipe: [carbon, hydrogen, hydrogen, hydrogen, oxygen, hydrogen],
     formula: "CH3OH",
 
 };
 
 var molecularHydrogen = {
+    recipe: [hydrogen, hydrogen],
     formula: "H2",
 };
 
 var molecualrNitrogen = {
+    recipe: [nitrogen, nitrogen],
     formula: "N2",
 };
 
 var molecularOxygen = {
+    recipe: [oxygen, oxygen],
     formula: "O2",
 };
 
 var ozone = {
+    recipe: [oxygen, oxygen, oxygen],
     formula: "O3",
 };
 
 var urea = {
+    recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen]
     formula: "NH2CONH2"
 };
 
