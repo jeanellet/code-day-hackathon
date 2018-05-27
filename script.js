@@ -18,9 +18,7 @@ var success=false;
 
         var newInnerDiv=document.createElement("div");
         newInnerDiv.className="myTooltip";
-        $('.myTooltip').attr({"data-toggle": "tooltip", "data-placement": "bottom"});
         newInnerDiv.title=array[i].name;
-
         var newImg=document.createElement("img");
         newImg.src=array[i].imgsrc;
         newImg.className="atomImg";
@@ -31,7 +29,7 @@ var success=false;
         newInnerDiv.appendChild(newImg);
         currentDiv.appendChild(newInnerDiv);
     }
-
+    $('.myTooltip').attr({"data-toggle": "tooltip", "data-placement": "bottom"});
     $('[data-toggle="tooltip"]').tooltip();
 
 
