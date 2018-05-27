@@ -144,7 +144,8 @@ var success=false;
                     document.getElementById("molecule-fact").innerHTML=molecules[i].fact;
                     document.getElementById("molecule-formula").innerHTML="Formula: "+molecules[i].formula;
                     document.getElementById("molecule-mass").innerHTML="Molar Mass: "+molecules[i].mass+ " g/mol";
-                    document.getElementById("fact-src").innerHTML='<a href="'+molecules[i].factsrc+'">Source</a>';
+                    document.getElementById("fact-src").innerHTML='<a target="_blank" href="'+molecules[i]
+                    .factsrc+'">Source</a>';
 
                 }
             }//end molecules iteration
