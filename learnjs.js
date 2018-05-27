@@ -1,13 +1,9 @@
 
 $(document).ready(function(){
-
-
-
     var container=document.getElementById("card-container");
         var newGrid=document.createElement("div");
             newGrid.className = "row card-group";
             newGrid.style = "height:75%";
-
  for (i=0; i < array.length; i++){
             var newColumn=document.createElement("div");
                 newColumn.className = "col-lg-3 col-md-6";
