@@ -1,5 +1,5 @@
 
-
+var discovered=[];
 
 $(document).ready(function(){
 var amountSelected=1;
@@ -8,7 +8,7 @@ var selectedAtom;
 var match=false;
 var success=false;
 
-var discovered=[];
+
 
 
     var atomSlots=["one","two","three","four"];

@@ -1,5 +1,16 @@
 
 $(document).ready(function(){
+
+var isFound =[];
+for (z=0; z < array.length; z++){
+    for (j=0; j < discovered.length; j++){
+        if (array[z].name==discovered[j].name){
+            isFound.push(true);
+            break;
+        };
+    };
+    isFound.push(false);
+};
     var container=document.getElementById("card-container");
         var newGrid=document.createElement("div");
             newGrid.className = "row card-group";
@@ -14,6 +25,7 @@ $(document).ready(function(){
                          newImage.src = array[i].imgsrc;
                          newImage.style.width = array[i].width;
                          newImage.style.margin = "auto";
+                         newImage.style.setProperty('padding-top','5%');
                     newCard.appendChild(newImage);
                     var newCardBody=document.createElement("div");
                          newCardBody.className = "card-body";
@@ -52,6 +64,8 @@ var moleculeContainer=document.getElementById("molecule-container");
                 newColumn2.className = "col-lg-3 col-md-6";
                 var newCard2=document.createElement("div");
                      newCard2.className = "card";
+
+                if(isFound[x]){
                     var newImage2=document.createElement("img");
                          newImage2.className = "card-img-top";
                          newImage2.src = molecules[x].imgsrc;
@@ -79,12 +93,42 @@ var moleculeContainer=document.getElementById("molecule-container");
                             newList4.innerHTML = "Molar Mass: " + molecules[x].mass + " g/mol";
                     newUList2.appendChild(newList3);
                     newUList2.appendChild(newList4);
-                newCard2.appendChild(newUList2);
+                newCard2.appendChild(newUList2);}
+
+              else{
+                var newImage2=document.createElement("img");
+                      newImage2.className = "card-img-top";
+                      newImage2.src = "questionmark.png";
+                      newImage2.style.width = "100%";
+                      newImage2.style.margin = "auto";
+                 newCard2.appendChild(newImage2);
+                 var newCardBody2=document.createElement("div");
+                      newCardBody2.className = "card-body";
+                     var newTitle2=document.createElement("h5");
+                          newTitle2.className = "card-title";
+                          newTitle2.innerHTML = "Undiscovered Molecule";
+                     var newParagraph2=document.createElement("p");
+                          newParagraph2.className = "card-text";
+                          newParagraph2.innerHTML = "This molecule has yet to be discovered! Keep playing to find more.";
+                 newCardBody2.appendChild(newTitle2);
+                 newCardBody2.appendChild(newParagraph2);
+             newCard2.appendChild(newCardBody2);
+                 var newUList2=document.createElement("ul");
+                     newUList2.className = "list-group list-group-flush";
+                     var newList3=document.createElement("li");
+                         newList3.className = "list-group-item";
+                         newList3.innerHTML = "Atomic Number: ???";
+                     var newList4=document.createElement("li");
+                         newList4.className = "list-group-item";
+                         newList4.innerHTML = "Molar Mass: ??? g/mol";
+                 newUList2.appendChild(newList3);
+                 newUList2.appendChild(newList4);
+             newCard2.appendChild(newUList2);
+                }
             newColumn2.appendChild(newCard2);
         newGrid2.appendChild(newColumn2);
     moleculeContainer.appendChild(newGrid2);
     }
-
 
 
 
