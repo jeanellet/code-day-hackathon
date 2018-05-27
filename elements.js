@@ -119,7 +119,7 @@ var ammonia = {
     formula: "NH3",
     mass: 17,
     fact:"When mixed with water, Ammonia can be used for everyday cleaning.",
-        factsrc="https://wiki.kidzsearch.com/wiki/Ammonia",
+        factsrc:"https://wiki.kidzsearch.com/wiki/Ammonia",
     name: "Ammonia"
 };
 
