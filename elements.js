@@ -178,7 +178,7 @@ var molecularHydrogen = {
     imgsrc: "molecularhydrogen.png",
     formula: "H2",
     mass: 2,
-    fact: "Hydrogen is a gas at room temperature, but acts like a metal when it is solid."
+    fact: "Hydrogen is a gas at room temperature, but acts like a metal when it is solid.",
         factsrc: "https://wiki.kidzsearch.com/wiki/Hydrogen",
     name: "Molecular Hydrogen"
 };
