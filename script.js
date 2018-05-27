@@ -87,9 +87,10 @@ var success=false;
                     booleanArray.push(false);
                 }
 
-                for(n=0;n<selectedCopy.length;n++){
+                for(n=0;n<amountSelected-1;n++){
                     usedSelected.push(false);
                 }
+                console.log(amountSelected);
 
                 console.log("checking recipe for "+molecules[i].name);
                 for(j=0;j<selectedCopy.length;j++){
@@ -111,7 +112,7 @@ var success=false;
                 for(m=0;m<booleanArray.length;m++){
                     console.log(booleanArray[m]);
                     if(!booleanArray[m]){
-                        console.log(false);
+                        console.log("not all atoms found");
                         break;
                     }
                     else if(m==booleanArray.length-1){
@@ -123,6 +124,7 @@ var success=false;
                 for(p=0;p<usedSelected.length;p++){
                     console.log(p.toString()+booleanArray[p]);
                     if(!usedSelected[p]){
+                        console.log("not all atoms used");
                         break;
                     }
                     else if(p==usedSelected.length-1){
