@@ -70,40 +70,72 @@ var success=false;
     $("#mix").click(function(){
         var selectedCopy=selectedArray;
 
-          for(m=0;m<selectedCopy.length;m++){
+            for(m=0;m<selectedCopy.length;m++){
               console.log("selected array: "+selectedCopy[m].name);
-          }
+            }
 
-          var i;
-          for(i=0;i<molecules.length;i++){
-            var correctCount=0;
-              var recipeCopy=molecules[i].recipe;
-              console.log("checking recipe for "+molecules[i].name);
-              for(j=0;j<recipeCopy.length;j++){
-                  for(k=0;k<selectedCopy.length;k++){
-                      console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
-                      console.log("j="+j+", k="+k);
-                      if(recipeCopy[j].name==selectedCopy[k].name){
-                          console.log("match!");
-                          correctCount++;
-                          break;
-                      }
-                  }
-              }//end comparing both arrays
 
-              console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
-              if(correctCount==recipeCopy.length&&amountSelected==recipeCopy.length+1){
-                  console.log(true);
-                  alert(molecules[i].name);
-                  return;
-              }
-              else{
-                  console.log(false);
-              }
 
-              }//end molecule iteration
-              success=false;
-              return;
+            var i;
+            for(i=0;i<molecules.length;i++){
+                var booleanArray=[];
+                var usedSelected=[];
+
+                var recipeCopy=molecules[i].recipe;
+                for(l=0;l<recipeCopy.length;l++){
+                    console.log("recipe "+recipeCopy[l].name);
+                    booleanArray.push(false);
+                }
+
+                for(n=0;n<selectedCopy.length;n++){
+                    usedSelected.push(false);
+                }
+
+                console.log("checking recipe for "+molecules[i].name);
+                for(j=0;j<selectedCopy.length;j++){
+                    for(k=0;k<recipeCopy.length;k++){
+                        console.log("comparing selected's "+selectedCopy[j].name+" and recipe's "+recipeCopy[k].name);
+                        console.log("j="+j+", k="+k);
+                        if(recipeCopy[k].name==selectedCopy[j].name&&!usedSelected[j]&&!booleanArray[k]){
+                            console.log("match");
+                            booleanArray[k]=true;
+                            usedSelected[j]=true;
+                            break;
+                        }
+                    }
+                }//end comparing both arrays
+
+                var allFound=false;
+                var allUsed=false;
+
+                for(m=0;m<booleanArray.length;m++){
+                    console.log(booleanArray[m]);
+                    if(!booleanArray[m]){
+                        console.log(false);
+                        break;
+                    }
+                    else if(m==booleanArray.length-1){
+                        allFound=true;
+                        break;
+                    }
+                }
+
+                for(p=0;p<usedSelected.length;p++){
+                    console.log(p.toString()+booleanArray[p]);
+                    if(!usedSelected[p]){
+                        console.log("you didnt use everything");
+                        break;
+                    }
+                    else if(p==usedSelected.length-1){
+                        allUsed=true;
+                        break;
+                    }
+                }
+
+                if(allFound&&allUsed){
+                    alert(molecules[i].name);
+                }
+            }//end molecules iteration
     });
 
 });
