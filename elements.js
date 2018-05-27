@@ -93,5 +93,15 @@ var methane = {
     name: "Methane"
 };
 
+var ethane = {
+    recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen],
+    imgsrc: "ethane.png",
+    formula: "C2H6",
+    mass: 30,
+    fact: "At room temperature, ethane can explode. However, when in its liquid state, ethane can cause serious frostbite.",
+        factsrc: "https://wiki.kidzsearch.com/wiki/Ethane",
+    name: "Ethane"
+};
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane];
+
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane];
