@@ -230,90 +230,105 @@ var urea = {
 var tricarbonMonoxide{
     recipe: [carbon, carbon, carbon, oxygen],
     formula: "C3O",
+    mass: 52,
     name: "Tricarbon Monoxide"
 };
 
 var propynal{
     recipe: [carbon, carbon, carbon, hydrogen, hydrogen, oxygen],
     formula: "C3H2O",
+    mass: 54,
     name: "Propynal"
 };
 
 var nitroxyl{
     recipe: [nitrogen, hydrogen, oxygen],
     formula:"NHO",
+    mass: 31,
     name: "Nirtoxyl"
 };
 
 var methylamine{
     recipe: [carbon, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula:"CNH5",
+    mass: 31,
     name: "Methylamine"
 };
 
 var hydrogenCyanide {
     recipe: [carbon, nitrogen, hydrogen],
     formula: "CNH",
+    mass: 27,
     name: "Hydrogen Cyanide"
 };
 
 var glycolaldehide{
     recipe: [carbon, carbon, oxygen, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "C2O2H4",
+    mass: 60,
     name: "Glycolaldehide"
 };
 
 var fulmunicAcid{
     recipe: [carbon, nitrogen, oxygen, hydrogen],
     formula: "CNOH",
+    mass: 43,
     name: "Fulmunic Acid"
 };
 
 var formamide{
     recipe: [carbon, nitrogen, oxygen, hydrogen, hydrogen, hydrogen],
     formmula: "CNOH3",
+    mass: 44,
     name: "Formamide"
 };
 
 var ethanimine{
     recipe: [carbon, carbon, nitrogen, oxygen, oxygen, oxygen, oxygen, oxygen],
     formula: "C2NO5",
+    mass: 43,
     name: "Ethanimine"
 };
 
 var cyanoacetylene{
     recipe: [carbon, carbon, carbon, nitrogen, hydrogen],
-    formula: "C3NH",
+    formula: "HC3N",
+    mass: 51,
     name: "Cyanoacetylene"
 };
 
 var cyanamide{
     recipe: [carbon, nitrogen, nitrogen, hydrogen, hydrogen],
     formula: "CN2H2",
+    mass: 42,
     name: "Cyanamide"
 };
 
 var acrylonitrile {
     recipe: [carbon, carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     formula: "C3NH3",
+    mass: 53,
     name: "Acrylonitrile"
 };
 
 var acrolein{
     recipe: [carbon, carbon, carbon, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     formula: "C3OH4",
+    mass: 56,
     name: "Acrolein"
 };
 
-var aceylene{
+var acetylene{
     recipe: [carbon, carbon, hydrogen, hydrogen],
     formula: "C2H2",
-    name: "Aceylene"
+    mass: 26,
+    name: "Acetylene"
 };
 
 var acetonitrile{
     recipe: [carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     formula: "C2NH3",
+    mass: 40,
     name: "Acetonitrile"
 };
 
