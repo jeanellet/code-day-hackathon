@@ -40,6 +40,17 @@
             <li class="nav-item">
                 <a class="nav-link" href="learn.html" onClick="localStorage.clear()">Clear Index</a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Sort Molecules
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" onclick="sort('alphabetical')">Alphabetical</a>
+                    <a class="dropdown-item" href="#" onclick="sort('centerAtom')">Center Atom</a>
+                    <a class="dropdown-item" href="#" onclick="sort('molarMass')">Molar Mass</a>
+                    <a class="dropdown-item" href="#" onclick="sort('moleculeSize')">Molecule "Size"</a>
+                </div>
+            </li>
         </ul>
         <span class="navbar-text">
             Kimika
