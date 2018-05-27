@@ -63,4 +63,4 @@ var hydrogenPeroxide = {
     name: "Hydrogen Peroxide"
 };
 
-var molecules=[water];
+var molecules=[water, hydrogenPeroxide];
