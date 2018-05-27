@@ -103,5 +103,15 @@ var ethane = {
     name: "Ethane"
 };
 
+var formaldehyde = {
+    recipe: [hydrogen, hydrogen, carbon, oxygen],
+    imgsrc: "formaldehyde.png",
+    formula: "H2CO",
+    mass: 30,
+    fact: "Formaldehyde is mainly used to make disinfectants, dyes, perservatives, and explosives.",
+        factsrc: "https://wiki.kidzsearch.com/wiki/Formaldehyde",
+    name: "Formaldehyde"
+};
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane];
+
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde];
