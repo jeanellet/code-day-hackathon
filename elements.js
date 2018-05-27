@@ -165,9 +165,13 @@ var ozone = {
 };
 
 var urea = {
+<<<<<<< HEAD
     recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen]
     formula: "NH2CONH2",
+=======
+    recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen],
+    formula: "NH2CONH2"
+>>>>>>> 049174f0b491e77fdb54e718f0759a8dff392070
 };
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, diazane
-dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualrNitrogen, molecularHydrogen, molecularOxygen, oxone, urea];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualrNitrogen, molecularHydrogen, molecularOxygen, oxone, urea];
