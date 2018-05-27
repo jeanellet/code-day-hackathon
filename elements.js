@@ -113,5 +113,49 @@ var formaldehyde = {
     name: "Formaldehyde"
 };
 
+var ammonia = {
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde];
+};
+
+var diazane = {
+
+};
+
+var dinitrogenMonoxide = {
+
+};
+
+var ethanol = {
+
+};
+
+var formicAcid = {
+
+};
+
+var methanol = {
+
+};
+
+var molecularHydrogen = {
+
+};
+
+var molecualrNitrogen = {
+
+};
+
+var molecularOxygen = {
+
+};
+
+var ozone = {
+
+};
+
+var urea = {
+
+};
+
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, diazane
+dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualrNitrogen, molecularHydrogen, molecularOxygen, oxone, urea];
