@@ -228,62 +228,77 @@ var urea = {
 //ADVANCED
 
 var tricarbonMonoxide{
+    formula: "C3O",
     name: "Tricarbon Monoxide"
 };
 
 var propynal{
+    formula: "C3H2O",
     name: "Propynal"
 };
 
 var nitroxyl{
+    formula:"NHO",
     name: "Nirtoxyl"
 };
 
 var methylamine{
+    formula:"CNH5",
     name: "Methylamine"
 };
 
 var hydrogenCyanide {
+    formula: "CNH",
     name: "Hydrogen Cyanide"
 };
 
 var glycolaldehide{
+    formula: "C2O2H4",
     name: "Glycolaldehide"
 };
 
 var fulmunicAcid{
+    formula: "CNOH",
     name: "Fulmunic Acid"
 };
 
 var formamide{
+    formmula: "CNOH3",
     name: "Formamide"
 };
 
 var ethanimine{
+    formula: "C2NO5",
     name: "Ethanimine"
 };
 
 var cyanoacetylene{
+    formula: "C3NH",
     name: "Cyanoacetylene"
 };
 
 var cyanamide{
+    formula: "CN2H2",
     name: "Cyanamide"
 };
 
 var acrylonitrile {
+    formula: "C3NH3",
     name: "Acrylonitrile"
 };
 
 var acrolein{
+    formula: "C3OH4",
     name: "Acrolein"
 };
 
 var aceylene{
+    formula: "C2H2",
     name: "Aceylene"
 };
 
 var acetonitrile{
+    formula: "C2NH3",
     name: "Acetonitrile"
 };
 
