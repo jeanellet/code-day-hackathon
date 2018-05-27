@@ -151,4 +151,40 @@ populate();
             populate();
         });
 
+        $("#molarMass").click(function(){
+            var j=1;
+            for(k=0;k<molecules.length-2;k++){
+                if(molecules[k].mass>molecules[j].mass){
+                    var temp=molecules[k];
+                    molecules[k]=molecules[j];
+                    molecules[j]=temp;
+                    k=-1;
+                    j=0;
+                }
+                j++;
+            }
+
+            var container=document.getElementById("card-container").innerHTML="";
+            var moleculeContainer=document.getElementById("molecule-container").innerHTML="";
+            populate();
+        });
+
+        $("#moleculeSize").click(function(){
+                    var j=1;
+                    for(k=0;k<molecules.length-2;k++){
+                        if(molecules[k].recipe.length>molecules[j].recipe.length){
+                            var temp=molecules[k];
+                            molecules[k]=molecules[j];
+                            molecules[j]=temp;
+                            k=-1;
+                            j=0;
+                        }
+                        j++;
+                    }
+
+                    var container=document.getElementById("card-container").innerHTML="";
+                    var moleculeContainer=document.getElementById("molecule-container").innerHTML="";
+                    populate();
+                });
+
 });
