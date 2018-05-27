@@ -35,7 +35,7 @@ var nitrogen = {
     anum:7,
     mass:14,
     fact:"Nitrogen is required to create amino acids, DNA, and RNA. Your body is about 3% Nitrogen!",
-        facsrc:"http://www.softschools.com/facts/periodic_table/nitrogen_facts/182/",
+        factsrc:"http://www.softschools.com/facts/periodic_table/nitrogen_facts/182/",
     width:"77.5%",
     name:"Nitrogen"
     };
