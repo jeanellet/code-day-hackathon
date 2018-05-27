@@ -13,7 +13,7 @@ var success=false;
 
     var atomSlots=["one","two","three","four"];
 
-    for(i=0;i<array.length;i++){
+    for(i=0;i<atomSlots.length;i++){
         var currentDiv=document.getElementById(atomSlots[i]);
 
         var newInnerDiv=document.createElement("div");

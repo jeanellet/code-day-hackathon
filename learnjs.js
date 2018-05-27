@@ -57,11 +57,11 @@ for (z=0; z < molecules.length; z++){
 
 var moleculeContainer=document.getElementById("molecule-container");
     var newGrid2=document.createElement("div");
-        newGrid2.className = "row card-group";
+        newGrid2.className = "row card-group justify-content-md-center";
         newGrid2.style = "height:75%";
     for (x=0; x < molecules.length; x++){
  var newColumn2=document.createElement("div");
-                newColumn2.className = "col-lg-3 col-md-6";
+                newColumn2.className = "col-lg-3 col-md-6 card-deck";
                 var newCard2=document.createElement("div");
                      newCard2.className = "card";
 
