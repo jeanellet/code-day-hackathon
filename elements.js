@@ -142,7 +142,7 @@ var dinitrogenMonoxide = {
 //};
 
 var formicAcid = {
-    recipe: [carbon, hydrogen. hydrogen, oxygen, oxygen],
+    recipe: [carbon, hydrogen, hydrogen, oxygen, oxygen],
     imgsrc: "formic acid.png",
     formula: "CH2O2",
     name: "Formic Acid"
