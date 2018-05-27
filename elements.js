@@ -138,7 +138,7 @@ var dinitrogenMonoxide = {
     imgsrc: "dinitrogen monoxide.png",
     formula: "N2O",
     mass: 44,
-    fact: "Dinitrogen Monoxide, or Nitrous Oxide, is known to most as 'laughing gas'."
+    fact: "Dinitrogen Monoxide, or Nitrous Oxide, is known to most as 'laughing gas'.",
         factsrc:"https://wiki.kidzsearch.com/wiki/Nitrous_oxide",
     name: "Nitrous Oxide"
 };
