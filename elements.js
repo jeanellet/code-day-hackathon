@@ -149,6 +149,7 @@ var formicAcid = {
     recipe: [carbon, hydrogen, hydrogen, oxygen, oxygen],
     imgsrc: "formic acid.png",
     formula: "CH2O2",
+    mass: 46,
     name: "Formic Acid"
 };
 
@@ -156,6 +157,7 @@ var methanol = {
     recipe: [carbon, hydrogen, hydrogen, hydrogen, oxygen, hydrogen],
     imgsrc: "methanol.png",
     formula: "CH3OH",
+    mass: 32,
     name: "Methanol"
 };
 
@@ -163,6 +165,7 @@ var molecularHydrogen = {
     recipe: [hydrogen, hydrogen],
     imgsrc: "molecularhydrogen.png",
     formula: "H2",
+    mass: 2,
     name: "Molecular Hydrogen"
 };
 
@@ -170,6 +173,7 @@ var molecularNitrogen = {
     recipe: [nitrogen, nitrogen],
     imgsrc: "molecularnitrogen.png",
     formula: "N2",
+    mass: 28,
     name: "Molecular Nitrogen"
 };
 
@@ -177,6 +181,7 @@ var molecularOxygen = {
     recipe: [oxygen, oxygen],
     imgsrc: "molecularoxygen.png",
     formula: "O2",
+    mass: 32,
     name: "Molecular Oxygen"
 };
 
@@ -184,6 +189,7 @@ var ozone = {
     recipe: [oxygen, oxygen, oxygen],
     imgsrc: "ozone.png",
     formula: "O3",
+    mass: 48,
     name: "Ozone"
 };
 
@@ -191,6 +197,7 @@ var urea = {
     recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen],
     imgsrc: "urea.png",
     formula: "NH2CONH2",
+    mass: 60,
     name: "Urea"
 };
 
