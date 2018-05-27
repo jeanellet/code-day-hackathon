@@ -114,11 +114,11 @@ var formaldehyde = {
 };
 
 var ammonia = {
-
+    formula: "NH3",
 };
 
-var diazane = {
-
+var hydrazine = {
+    formula: "N2H4",
 };
 
 var dinitrogenMonoxide = {
