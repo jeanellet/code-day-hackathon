@@ -56,6 +56,7 @@ $(document).ready(function(){
     });
 
     $("#mix").click(function(){
+
         for(i=0;i<selectedArray.length;i++){
             console.log(selectedArray[i].name);
         }
