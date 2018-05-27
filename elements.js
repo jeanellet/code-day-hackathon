@@ -169,4 +169,4 @@ var urea = {
     formula: "NH2CONH2",
 };
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, oxone, urea];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
