@@ -83,5 +83,15 @@ var carbonMonoxide = {
     name: "Carbon Monoxide"
 };
 
+var methane = {
+    recipe: [carbon, hydrogen, hydrogen, hydrogen],
+    imgsrc: "methane.png",
+    formula: "CH4",
+    mass: 16,
+    fact: "Methane ranks amongst the worst greenhouse gases.",
+        factsrc: "http://www.edu-resource.com/facts-about-methane.html",
+    name: "Methane"
+};
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide];
+
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane];
