@@ -5,16 +5,27 @@ $(document).ready(function(){
     var amountSelected=1;
     var selectedArray=[];
 
-    var first=document.getElementById("one");
+    var atomSlots=["one","two","three","four"];
 
-    var newImg=document.createElement("img");
-    newImg.src=oxygen.imgsrc;
-    newImg.className="atomImg";
-    newImg.style="width:"+oxygen.width+"; margin:auto !important;";
-    newImg.align="middle";
-    newImg.id=oxygen.name;
+    for(i=0;i<array.length;i++){
+        var currentDiv=document.getElementById(atomSlots[i]);
 
-    first.appendChild(newImg);
+        var newInnerDiv=document.createElement("div");
+        newInnerDiv.className="myTooltip";
+        $('.myTooltip').attr({"data-toggle": "tooltip", "data-placement": "bottom"});
+        newInnerDiv.title=array[i].name;
+
+        var newImg=document.createElement("img");
+        newImg.src=array[i].imgsrc;
+        newImg.className="atomImg";
+        newImg.style="width:"+array[i].width+"; margin:auto !important;";
+        newImg.align="middle";
+        newImg.id=array[i].name;
+
+        newInnerDiv.appendChild(newImg);
+        currentDiv.appendChild(newInnerDiv);
+    }
+
 
     $(".atomImg").click(function(){
         var selectedAtom;
@@ -26,9 +37,6 @@ $(document).ready(function(){
             }
 
         }
-
-        console.log("selectedaatom="+selectedAtom.width);
-
         var currentSlot=amountSelected.toString();
 
         var dest=document.getElementById(currentSlot);
@@ -55,11 +63,53 @@ $(document).ready(function(){
         };
     });
 
-    $("#mix").click(function(){
+    var match=false;
 
-        for(i=0;i<selectedArray.length;i++){
-            console.log(selectedArray[i].name);
+    var success=false;
+
+    $( "#mix" ).unbind( "click" );
+    $("#mix").click(function(){
+        var selectedCopy=selectedArray;
+
+        for(m=0;m<selectedCopy.length;m++){
+            console.log("selected array: "+selectedCopy[m].name);
         }
+
+        for(i=0;i<molecules.length;i++){
+            var recipeCopy=molecules[i].recipe;
+            for(j=0;j<recipeCopy.length;j++){
+                for(k=0;k<selectedCopy.length;k++){
+                    console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
+                    console.log("j="+j+", k="+k);
+                    if(recipeCopy[j].name==selectedCopy[k].name){
+                        console.log("match!");
+                        selectedCopy[k]="";
+                        match=true;
+                        break;
+                    }
+                }
+                if(!match){
+                    break;
+                }
+            }
+
+            var correctCount=0;
+
+            for(l=0;l<selectedCopy.length;l++){
+                if(selectedCopy[l]==""){
+                    correctCount++;
+                }
+            }
+            console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
+            if(correctCount==recipeCopy.length){
+                console.log(true);
+            }
+            else{
+                console.log(false);
+            }
+
+        }//end molecule iteration
+        success=false;
     });
 
 });
