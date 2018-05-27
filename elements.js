@@ -64,14 +64,24 @@ var hydrogenPeroxide = {
 };
 
 var carbonDioxide = {
-    recipe: [carbo, oxygen, oxygen],
+    recipe: [carbon, oxygen, oxygen],
     imgsrc: "carbondioxide.png",
     formula: "CO2",
     mass: 44,
     fact: "Carbon Dioxide has no taste, color, or smell.",
         factsrc:"https://www.analoxsensortechnology.com/blog/2017/06/22/ten-interesting-facts-carbon-dioxide-humble-carbon-dioxide-monitor/",
     name: "Carbon Dioxide"
-}
+};
+
+var carbonMonoxide = {
+    recipe: [carbon, oxygen],
+    imgsrc: "carbonmonoxide.png",
+    formula: "CO",
+    mass: 28,
+    fact:"In high concentrations, Carbon Monoxixe can kill within minutes.",
+        factsrc: "https://www.grainger.com/content/qt-236-carbon-monoxide-facts",
+    name: "Carbon Monoxide"
+};
 
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide];
