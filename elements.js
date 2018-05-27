@@ -63,4 +63,15 @@ var hydrogenPeroxide = {
     name: "Hydrogen Peroxide"
 };
 
-var molecules=[water, hydrogenPeroxide];
+var carbonDioxide = {
+    recipe: [carbo, oxygen, oxygen],
+    imgsrc: "carbondioxide.png",
+    formula: "CO2",
+    mass: 44,
+    fact: "Carbon Dioxide has no taste, color, or smell.",
+        factsrc:"https://www.analoxsensortechnology.com/blog/2017/06/22/ten-interesting-facts-carbon-dioxide-humble-carbon-dioxide-monitor/",
+    name: "Carbon Dioxide"
+}
+
+
+var molecules = [water, hydrogenPeroxide, carbonDioxide];
