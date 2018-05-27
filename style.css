@@ -6,6 +6,9 @@
     .workspace{
         height: 70%;
     }
+    .element-row{
+            width:100%;
+        }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -16,26 +19,35 @@
     .workspace{
         height: 70%;
     }
+    .element-row{
+            width:100%;
+        }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .elements{
-        height: 15%;
+        height: 20%;
     }
     .workspace{
         height: 50%;
     }
+    .element-row{
+            width:70%;
+        }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .elements{
-        height: 15%;
+        height: 20%;
     }
     .workspace{
         height: 50%;
     }
+    .element-row{
+            width:60%;
+        }
 }
 
 /*---------------------------------------------------------------------------*/
@@ -49,11 +61,12 @@ html{
 }
 
 .elements{
-    border-style:solid;
+
 }
 
 .workspace{
     border-style:dashed;
+    border-color:gray;
 }
 
 .container{
@@ -66,12 +79,13 @@ html{
 }
 
 .col-lg-2{
-    border-style:dotted;
+    height:100%;
+
 }
 
 .element-row{
-    margin: 0% !important;
-    height:50%;
+    margin: auto !important;
+    height:100%;
 }
 
 .workspace-row{
@@ -88,4 +102,8 @@ html{
     position absolute;
     width:96%;
     margin: 0% 2%;
+}
+
+.buttons{
+    margin-top:2%;
 }
