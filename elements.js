@@ -223,4 +223,49 @@ var urea = {
     name: "Urea"
 };
 
+var tricarbonMonoxide{
+};
+
+var propynal{
+};
+
+var nitroxyl{
+};
+
+var methylamine{
+};
+
+var hydrogenCyanide {
+};
+
+var glycolaldehide{
+};
+
+var fulmunicAcid{
+};
+
+var formamide{
+};
+
+var ethanimine{
+};
+
+var cyanoacetylene{
+};
+
+var cyanamide{
+};
+
+var acrylonitrile {
+};
+
+var acrolein{
+};
+
+var aceylene{
+};
+
+var acetonitrile{
+};
+
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
