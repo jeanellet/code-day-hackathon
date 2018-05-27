@@ -267,12 +267,12 @@ var hydrogenCyanide {
     name: "Hydrogen Cyanide"
 };
 
-var glycolaldehide{
+var glycolaldehyde{
     recipe: [carbon, carbon, oxygen, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "glycolaldehyde.png",
     formula: "C2O2H4",
     mass: 60,
-    name: "Glycolaldehide"
+    name: "Glycolaldehyde"
 };
 
 var fulmunicAcid{
@@ -347,4 +347,6 @@ var acetonitrile{
     name: "Acetonitrile"
 };
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine,
+dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen,
+molecularOxygen, ozone, urea, tricarbonMonoxide, propynal, nitroxyl, methylamine. hydrogenCyanide, glycolaldehyde, fulmunicAcid, formamide, ethanimine, cyanoacetylene, cyanamide, acrylonitrile, acrolein, acetylene, acetonitrile];
