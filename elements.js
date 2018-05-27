@@ -114,9 +114,10 @@ var formaldehyde = {
 };
 
 var ammonia = {
-    recipe: [nitrogen, hydrogen, hydrogen],
+    recipe: [nitrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "ammonia.png",
     formula: "NH3",
+    mass: 17,
     name: "Ammonia"
 };
 
@@ -124,6 +125,7 @@ var hydrazine = {
     recipe: [nitrogen, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "hydrazine.png",
     formula: "N2H4",
+    mass: 32,
     name: "Hydrazine"
 };
 
@@ -131,6 +133,7 @@ var dinitrogenMonoxide = {
     recipe: [nitrogen, nitrogen, oxygen],
     imgsrc: "dinitrogen monoxide.png",
     formula: "N2O",
+    mass: 44,
     name: "Dinitrogen Monoxide"
 };
 
@@ -138,6 +141,7 @@ var dinitrogenMonoxide = {
 //    recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, oxygen],
 //    imgsrc: "ethanol.png",
 //    formula: "C2H6O",
+//      mass: 46,
 //    name: "Ethanol"
 //};
 
