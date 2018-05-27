@@ -73,40 +73,28 @@ var success=false;
           for(m=0;m<selectedCopy.length;m++){
               console.log("selected array: "+selectedCopy[m].name);
           }
-            var i;
+
+          var i;
           for(i=0;i<molecules.length;i++){
+            var correctCount=0;
               var recipeCopy=molecules[i].recipe;
+              console.log("checking recipe for "+molecules[i].name);
               for(j=0;j<recipeCopy.length;j++){
                   for(k=0;k<selectedCopy.length;k++){
                       console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
                       console.log("j="+j+", k="+k);
                       if(recipeCopy[j].name==selectedCopy[k].name){
                           console.log("match!");
-                          selectedCopy[k]="";
-                          match=true;
+                          correctCount++;
                           break;
                       }
                   }
-                  if(!match){
-                      break;
-                  }
               }//end comparing both arrays
 
-              var correctCount=0;
-              var extra=false;
-
-              for(l=0;l<selectedCopy.length;l++){
-                  if(selectedCopy[l]==""){
-                      correctCount++;
-                  }
-                  else{
-                    extra=true;
-                  }
-              }
               console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
-              if(correctCount==recipeCopy.length&&!extra){
+              if(correctCount==recipeCopy.length&&amountSelected==recipeCopy.length+1){
                   console.log(true);
-                  console.log(molecules[i].name);
+                  alert(molecules[i].name);
                   return;
               }
               else{
