@@ -1,9 +1,13 @@
 
 
-$(document).ready(function(){
 
-    var amountSelected=1;
-    var selectedArray=[];
+$(document).ready(function(){
+var amountSelected=1;
+var selectedArray=[];
+var selectedAtom;
+var match=false;
+var success=false;
+
 
     var atomSlots=["one","two","three","four"];
 
@@ -28,8 +32,6 @@ $(document).ready(function(){
 
 
     $(".atomImg").click(function(){
-        var selectedAtom;
-
         for(i=0;i<array.length;i++){
             if(array[i].name==this.id){
                 selectedAtom=array[i];
@@ -63,53 +65,52 @@ $(document).ready(function(){
         };
     });
 
-    var match=false;
 
-    var success=false;
 
-    $( "#mix" ).unbind( "click" );
     $("#mix").click(function(){
-        var selectedCopy=selectedArray;
+var selectedCopy=selectedArray;
 
-        for(m=0;m<selectedCopy.length;m++){
-            console.log("selected array: "+selectedCopy[m].name);
-        }
+              for(m=0;m<selectedCopy.length;m++){
+                  console.log("selected array: "+selectedCopy[m].name);
+              }
 
-        for(i=0;i<molecules.length;i++){
-            var recipeCopy=molecules[i].recipe;
-            for(j=0;j<recipeCopy.length;j++){
-                for(k=0;k<selectedCopy.length;k++){
-                    console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
-                    console.log("j="+j+", k="+k);
-                    if(recipeCopy[j].name==selectedCopy[k].name){
-                        console.log("match!");
-                        selectedCopy[k]="";
-                        match=true;
-                        break;
-                    }
-                }
-                if(!match){
-                    break;
-                }
-            }
+              for(i=0;i<molecules.length;i++){
+                  var recipeCopy=molecules[i].recipe;
+                  for(j=0;j<recipeCopy.length;j++){
+                      for(k=0;k<selectedCopy.length;k++){
+                          console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
+                          console.log("j="+j+", k="+k);
+                          if(recipeCopy[j].name==selectedCopy[k].name){
+                              console.log("match!");
+                              selectedCopy[k]="";
+                              match=true;
+                              break;
+                          }
+                      }
+                      if(!match){
+                          break;
+                      }
+                  }
 
-            var correctCount=0;
+                  var correctCount=0;
 
-            for(l=0;l<selectedCopy.length;l++){
-                if(selectedCopy[l]==""){
-                    correctCount++;
-                }
-            }
-            console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
-            if(correctCount==recipeCopy.length){
-                console.log(true);
-            }
-            else{
-                console.log(false);
-            }
+                  for(l=0;l<selectedCopy.length;l++){
+                      if(selectedCopy[l]==""){
+                          correctCount++;
+                      }
+                  }
+                  console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
+                  if(correctCount==recipeCopy.length){
+                      console.log(true);
+                      return;
+                  }
+                  else{
+                      console.log(false);
+                      return;
+                  }
 
-        }//end molecule iteration
-        success=false;
+              }//end molecule iteration
+              success=false;
     });
 
 });
