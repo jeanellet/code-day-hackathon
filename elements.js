@@ -118,8 +118,6 @@ var ammonia = {
     imgsrc: "ammonia.png",
     formula: "NH3",
     mass: 17,
-    fact: "If dissolved in water, Ammonia can be used for everyday cleaning.",
-        factsrc:"https://wiki.kidzsearch.com/wiki/Ammonia",
     name: "Ammonia"
 };
 
@@ -128,8 +126,6 @@ var hydrazine = {
     imgsrc: "hydrazine.png",
     formula: "N2H4",
     mass: 32,
-    fact: "Hydrazine is explosive! It is used when creating rocket fuels.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Hydrazine",
     name: "Hydrazine"
 };
 
@@ -138,9 +134,7 @@ var dinitrogenMonoxide = {
     imgsrc: "dinitrogen monoxide.png",
     formula: "N2O",
     mass: 44,
-    fact: "Dihidrogen Monoxide, or Nitrous Oxide, is known by most as 'laughing gas'.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Nitrous_oxide",
-    name: "Nitrous Oxide"
+    name: "Dinitrogen Monoxide"
 };
 
 //var ethanol = {
@@ -148,8 +142,6 @@ var dinitrogenMonoxide = {
 //    imgsrc: "ethanol.png",
 //    formula: "C2H6O",
 //      mass: 46,
-//    fact: "Ethanol is more commonly known as 'alcohol'.",
-//        factsrc: "https://wiki.kidzsearch.com/wiki/Ethanol",
 //    name: "Ethanol"
 //};
 
@@ -158,8 +150,6 @@ var formicAcid = {
     imgsrc: "formic acid.png",
     formula: "CH2O2",
     mass: 46,
-    fact: "Formic acid is most commonly found in the bites and stings of ants and bees.",
-        factsrc: "http://acidpedia.org/formic_acid/",
     name: "Formic Acid"
 };
 
@@ -168,8 +158,6 @@ var methanol = {
     imgsrc: "methanol.png",
     formula: "CH3OH",
     mass: 32,
-    fact: "Metanol is toxic. It can cause serious damage, such as blindness and/or death.",
-        factsrc:"https://wiki.kidzsearch.com/wiki/Methanol",
     name: "Methanol"
 };
 
@@ -178,8 +166,6 @@ var molecularHydrogen = {
     imgsrc: "molecularhydrogen.png",
     formula: "H2",
     mass: 2,
-    fact: "Hydrogen is a gas at room temperature, but acts like a metal when it is solid.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Hydrogen",
     name: "Molecular Hydrogen"
 };
 
@@ -188,8 +174,6 @@ var molecularNitrogen = {
     imgsrc: "molecularnitrogen.png",
     formula: "N2",
     mass: 28,
-    fact: "Nitrogen atoms tend to form N2 because of its strong bond.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Nitrogen",
     name: "Molecular Nitrogen"
 };
 
@@ -198,8 +182,6 @@ var molecularOxygen = {
     imgsrc: "molecularoxygen.png",
     formula: "O2",
     mass: 32,
-    fact: "Many living things need oxygen to breathe, but it is poisonous to some life forms.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Oxygen",
     name: "Molecular Oxygen"
 };
 
@@ -208,8 +190,6 @@ var ozone = {
     imgsrc: "ozone.png",
     formula: "O3",
     mass: 48,
-    fact: "The ozone layer is a portion of the stratosphere that has a high concentration of ozone.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Ozone",
     name: "Ozone"
 };
 
@@ -218,9 +198,7 @@ var urea = {
     imgsrc: "urea.png",
     formula: "NH2CONH2",
     mass: 60,
-    fact: "In huans, urea is removed from the blood in the kidneys and removed from the body in urine.",
-        factsrc: "https://wiki.kidzsearch.com/wiki/Urea",
-    name: "Urea (Carbonyl Diamide)"
+    name: "Urea"
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
