@@ -57,12 +57,12 @@ var success=false;
     });
 
     $("#clear").click(function(){
-        amountSelected=1;
         selectedArray=[];
         console.log("clearing");
-        for(i=amountSelected;i<=array.length;i++){
+        for(i=1;i<=8;i++){
             document.getElementById(i).innerHTML = "";
         };
+        amountSelected=1;
     });
 
 
@@ -147,12 +147,12 @@ var success=false;
                 }
             }//end molecules iteration
 
-            amountSelected=1;
             selectedArray=[];
             console.log("clearing");
-            for(i=amountSelected;i<=array.length;i++){
+            for(i=1;i<=8;i++){
                 document.getElementById(i).innerHTML = "";
             };
+            amountSelected=1;
     });
 
 });
