@@ -1,4 +1,5 @@
 
+//ELEMENTS
 var oxygen = {
     imgsrc:"o.png",
     anum:8,
@@ -41,4 +42,7 @@ var nitrogen = {
 
 var array = [oxygen, hydrogen, carbon, nitrogen];
 
-
+//MOLECULES
+var water = {
+    imgsrc
+}
