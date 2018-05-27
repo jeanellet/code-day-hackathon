@@ -44,6 +44,7 @@ var array = [oxygen, hydrogen, carbon, nitrogen];
 
 //MOLECULES
 var water = {
+    recipe: [oxygen,hydrogen,hydrogen],
     imgsrc:"water.png",
     formula: "H2O",
     mass:18,
