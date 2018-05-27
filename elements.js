@@ -113,6 +113,8 @@ var formaldehyde = {
     name: "Formaldehyde"
 };
 
+//INTERMEDIATE
+
 var ammonia = {
     recipe: [nitrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "ammonia.png",
@@ -223,49 +225,66 @@ var urea = {
     name: "Urea"
 };
 
+//ADVANCED
+
 var tricarbonMonoxide{
+    name: "Tricarbon Monoxide"
 };
 
 var propynal{
+    name: "Propynal"
 };
 
 var nitroxyl{
+    name: "Nirtoxyl"
 };
 
 var methylamine{
+    name: "Methylamine"
 };
 
 var hydrogenCyanide {
+    name: "Hydrogen Cyanide"
 };
 
 var glycolaldehide{
+    name: "Glycolaldehide"
 };
 
 var fulmunicAcid{
+    name: "Fulmunic Acid"
 };
 
 var formamide{
+    name: "Formamide"
 };
 
 var ethanimine{
+    name: "Ethanimine"
 };
 
 var cyanoacetylene{
+    name: "Cyanoacetylene"
 };
 
 var cyanamide{
+    name: "Cyanamide"
 };
 
 var acrylonitrile {
+    name: "Acrylonitrile"
 };
 
 var acrolein{
+    name: "Acrolein"
 };
 
 var aceylene{
+    name: "Aceylene"
 };
 
 var acetonitrile{
+    name: "Acetonitrile"
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
