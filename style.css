@@ -4,11 +4,15 @@
         height: 10%;
     }
     .workspace{
-        height: 70%;
+        height: 60%;
     }
     .element-row{
-            width:100%;
-        }
+        width:100%;
+    }
+    .workspace-row{
+        margin:5%;
+        height:30%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -17,11 +21,15 @@
         height: 10%;
     }
     .workspace{
-        height: 70%;
+        height: 60%;
     }
     .element-row{
-            width:100%;
-        }
+        width:100%;
+    }
+    .workspace-row{
+        margin:5%;
+        height:30%;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -33,8 +41,12 @@
         height: 50%;
     }
     .element-row{
-            width:70%;
-        }
+        width:70%;
+    }
+    .workspace-row{
+        margin-top:2%;
+        height:30%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -46,8 +58,12 @@
         height: 50%;
     }
     .element-row{
-            width:60%;
-        }
+        width:60%;
+    }
+    .workspace-row{
+        margin-top:2%;
+        height:30%;
+    }
 }
 
 /*---------------------------------------------------------------------------*/
@@ -87,11 +103,6 @@ html{
 .element-row{
     margin: auto !important;
     height:50%;
-}
-
-.workspace-row{
-    padding-left:5%;
-    padding-right:5%;
 }
 
 .btn{

@@ -22,7 +22,7 @@ var success=false;
         var newImg=document.createElement("img");
         newImg.src=array[i].imgsrc;
         newImg.className="atomImg";
-        newImg.style="width:"+array[i].width+"; margin:auto !important;";
+        newImg.style="width:calc(("+array[i].width+")*.8); margin:auto !important;";
         newImg.align="middle";
         newImg.id=array[i].name;
 
@@ -48,7 +48,7 @@ var success=false;
         var copyImg=document.createElement("img");
         copyImg.src=selectedAtom.imgsrc;
         copyImg.className="atomImg";
-        copyImg.style="width:calc(("+selectedAtom.width+")/2); margin:auto !important;";
+        copyImg.style="width:calc(("+selectedAtom.width+")*.8); margin:auto !important;";
         copyImg.align="middle";
         copyImg.id=selectedAtom.name;
 
