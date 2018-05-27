@@ -44,13 +44,23 @@ var array = [oxygen, hydrogen, carbon, nitrogen];
 
 //MOLECULES
 var water = {
-    recipe: [oxygen,hydrogen,hydrogen],
+    recipe: [hydrogen, hydrogen, oxygen],
     imgsrc:"water.png",
     formula: "H2O",
     mass:18,
     fact: "Every day, we lose over one cup of water as we exhale.",
         factsrc:"https://www.seametrics.com/blog/water-facts/",
-    name: "water",
+    name: "Water"
+};
+
+var hydrogenPeroxide = {
+    recipe: [hydrogen, hydrogen, oxygen, oxygen],
+    imgsrc: "hydroperox.png",
+    formula: "H2O2",
+    mass: 34,
+    fact: "Your body naturally produces Hydrogen Peroxide to fight bacteria and infections.",
+        factsrc: "https://puroxi.com/interesting-facts-about-hydrogen-peroxide/",
+    name: "Hydrogen Peroxide"
 };
 
 var molecules=[water];
