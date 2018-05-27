@@ -150,7 +150,7 @@ var formicAcid = {
 
 var methanol = {
     recipe: [carbon, hydrogen, hydrogen, hydrogen, oxygen, hydrogen],
-    imgsrc: "methanol.png"
+    imgsrc: "methanol.png",
     formula: "CH3OH",
     name: "Methanol"
 };
@@ -190,4 +190,4 @@ var urea = {
     name: "Urea"
 };
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecularNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
