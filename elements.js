@@ -148,8 +148,8 @@ var dinitrogenMonoxide = {
 //    imgsrc: "ethanol.png",
 //    formula: "C2H6O",
 //      mass: 46,
-    fact: "Most people refer to ethanol simply as 'alcohol'.",
-        factsrc:"https://wiki.kidzsearch.com/wiki/Ethanol",
+//    fact: "Most people refer to ethanol simply as 'alcohol'.",
+//        factsrc:"https://wiki.kidzsearch.com/wiki/Ethanol",
 //    name: "Ethanol"
 //};
 
