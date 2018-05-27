@@ -1,13 +1,16 @@
 
 $(document).ready(function(){
 
-for (i=0; i < array.length; i++){
+
 
     var container=document.getElementById("card-container");
-        var grid=document.createElement("div");
-            grid.className = "row";
-            var column=document.createElement("div");
-                column.className = "col";
+        var newGrid=document.createElement("div");
+            newGrid.className = "row card-group";
+            newGrid.style = "height:75%";
+
+ for (i=0; i < array.length; i++){
+            var newColumn=document.createElement("div");
+                newColumn.className = "col-lg-3 col-md-6";
                 var newCard=document.createElement("div");
                      newCard.className = "card";
                     var newImage=document.createElement("img");
@@ -38,14 +41,9 @@ for (i=0; i < array.length; i++){
                     newUList.appendChild(newList);
                     newUList.appendChild(newList2);
                 newCard.appendChild(newUList);
-            column.appendChild(newCard);
-        grid.appendChild(column);
-            if (i%3){
-            var newRow=document.createElement("div");
-                newRow.className = "w-100";
-            grid.appendChild(newRow);
-            }
-    container.appendChild(grid);
+            newColumn.appendChild(newCard);
+        newGrid.appendChild(newColumn);
+    container.appendChild(newGrid);
 };
 
 });

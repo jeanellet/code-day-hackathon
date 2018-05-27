@@ -13,7 +13,7 @@ var hydrogen = {
     imgsrc:"h.png",
     anum:1,
     mass:"1 g/mol",
-    fact:"Hydrogen is the most abundant chemical element un the universe.",
+    fact:"Hydrogen is the most abundant chemical element in the universe.",
         factsrc:"http://www.softschools.com/facts/periodic_table/hydrogen_facts/177/",
     width:"60%",
     name:"Hydrogen"
