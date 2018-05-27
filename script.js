@@ -162,6 +162,7 @@ var success=false;
                     .factsrc+'">Source</a>';
 
                     discovered.push(molecules[i]);
+                    localStorage.setItem("discovered-" + i, molecules[i].name);
 
                 }
             }//end molecules iteration

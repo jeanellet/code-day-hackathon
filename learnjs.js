@@ -2,13 +2,15 @@
 $(document).ready(function(){
 
 var isFound =[];
-for (z=0; z < array.length; z++){
-    for (j=0; j < discovered.length; j++){
-        if (array[z].name==discovered[j].name){
+for (z=0; z < molecules.length; z++){
+    for (j=0; j < 100; j++){
+        if (molecules[z].name==localStorage.getItem("discovered-"+j)){
+            console.log("AAA");
             isFound.push(true);
             break;
         };
     };
+    console.log("u dont fuked up");
     isFound.push(false);
 };
     var container=document.getElementById("card-container");
