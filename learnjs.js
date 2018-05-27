@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+function populate(){
 var isFound =[];
 for (z=0; z < molecules.length; z++){
     if (molecules[z].name==localStorage.getItem("discovered-"+z)){
@@ -129,7 +130,25 @@ var moleculeContainer=document.getElementById("molecule-container");
         newGrid2.appendChild(newColumn2);
     moleculeContainer.appendChild(newGrid2);
     }
-
-
+};
+populate();
+        $("#alphabetical").click(function(){
+            console.log("AAA");
+            var j=1;
+            for(k=0;k<molecules.length-2;k++){
+                console.log(k);
+                if(molecules[k].name>molecules[j].name){
+                    console.log("switching "+molecules[k].name+" and "+molecules[j].name);
+                    var temp=molecules[k];
+                    molecules[k]=molecules[j];
+                    molecules[j]=temp;
+                    k=0;
+                }
+                j++;
+            }
+            var container=document.getElementById("card-container").innerHTML="";
+            var moleculeContainer=document.getElementById("molecule-container").innerHTML="";
+            populate();
+        });
 
 });
