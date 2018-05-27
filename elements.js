@@ -122,39 +122,41 @@ var hydrazine = {
 };
 
 var dinitrogenMonoxide = {
+    formula: "N2O",
 
 };
 
 var ethanol = {
-
+    formula: "C2H6O",
 };
 
 var formicAcid = {
-
+    formula: "CH2O2",
 };
 
 var methanol = {
+    formula: "CH3OH",
 
 };
 
 var molecularHydrogen = {
-
+    formula: "H2",
 };
 
 var molecualrNitrogen = {
-
+    formula: "N2",
 };
 
 var molecularOxygen = {
-
+    formula: "O2",
 };
 
 var ozone = {
-
+    formula: "O3",
 };
 
 var urea = {
-
+    formula: "NH2CONH2"
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, diazane
