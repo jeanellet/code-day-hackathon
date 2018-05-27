@@ -68,49 +68,54 @@ var success=false;
 
 
     $("#mix").click(function(){
-var selectedCopy=selectedArray;
+        var selectedCopy=selectedArray;
 
-              for(m=0;m<selectedCopy.length;m++){
-                  console.log("selected array: "+selectedCopy[m].name);
-              }
-
-              for(i=0;i<molecules.length;i++){
-                  var recipeCopy=molecules[i].recipe;
-                  for(j=0;j<recipeCopy.length;j++){
-                      for(k=0;k<selectedCopy.length;k++){
-                          console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
-                          console.log("j="+j+", k="+k);
-                          if(recipeCopy[j].name==selectedCopy[k].name){
-                              console.log("match!");
-                              selectedCopy[k]="";
-                              match=true;
-                              break;
-                          }
-                      }
-                      if(!match){
+          for(m=0;m<selectedCopy.length;m++){
+              console.log("selected array: "+selectedCopy[m].name);
+          }
+            var i;
+          for(i=0;i<molecules.length;i++){
+              var recipeCopy=molecules[i].recipe;
+              for(j=0;j<recipeCopy.length;j++){
+                  for(k=0;k<selectedCopy.length;k++){
+                      console.log("comparing recipe's "+recipeCopy[j].name+" and selected's "+selectedCopy[k].name);
+                      console.log("j="+j+", k="+k);
+                      if(recipeCopy[j].name==selectedCopy[k].name){
+                          console.log("match!");
+                          selectedCopy[k]="";
+                          match=true;
                           break;
                       }
                   }
-
-                  var correctCount=0;
-
-                  for(l=0;l<selectedCopy.length;l++){
-                      if(selectedCopy[l]==""){
-                          correctCount++;
-                      }
+                  if(!match){
+                      break;
                   }
-                  console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
-                  if(correctCount==recipeCopy.length){
-                      console.log(true);
-                      return;
+              }//end comparing both arrays
+
+              var correctCount=0;
+              var extra=false;
+
+              for(l=0;l<selectedCopy.length;l++){
+                  if(selectedCopy[l]==""){
+                      correctCount++;
                   }
                   else{
-                      console.log(false);
-                      return;
+                    extra=true;
                   }
+              }
+              console.log(correctCount.toString()+ " vs "+(recipeCopy.length).toString());
+              if(correctCount==recipeCopy.length&&!extra){
+                  console.log(true);
+                  console.log(molecules[i].name);
+                  return;
+              }
+              else{
+                  console.log(false);
+              }
 
               }//end molecule iteration
               success=false;
+              return;
     });
 
 });
