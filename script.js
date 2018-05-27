@@ -123,7 +123,6 @@ var success=false;
                 for(p=0;p<usedSelected.length;p++){
                     console.log(p.toString()+booleanArray[p]);
                     if(!usedSelected[p]){
-                        console.log("you didnt use everything");
                         break;
                     }
                     else if(p==usedSelected.length-1){
@@ -133,9 +132,23 @@ var success=false;
                 }
 
                 if(allFound&&allUsed){
-                    alert(molecules[i].name);
+                    $('#new-molecule').modal('show');
+
+                    var showMolecule=molecules[i].name;
+
+                    var modal = $('#new-molecule');
+                    modal.find('.modal-title').text(showMolecule);
+
+
                 }
             }//end molecules iteration
+
+            amountSelected=1;
+            selectedArray=[];
+            console.log("clearing");
+            for(i=amountSelected;i<=array.length;i++){
+                document.getElementById(i).innerHTML = "";
+            };
     });
 
 });

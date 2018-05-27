@@ -67,6 +67,7 @@ html{
 .workspace{
     border-style:dashed;
     border-color:gray;
+    margin-top:1%;
 }
 
 .container{
@@ -89,7 +90,9 @@ html{
 }
 
 .workspace-row{
-    margin:10%;
+    padding-left:5%;
+    padding-right:5%;
+    margin:5%;
 }
 
 .btn{
