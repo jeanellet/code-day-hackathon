@@ -110,3 +110,7 @@ html{
 .buttons{
     margin-top:2%;
 }
+
+#molecule-img{
+    width:100%;
+}

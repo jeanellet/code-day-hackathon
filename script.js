@@ -138,7 +138,11 @@ var success=false;
 
                     var modal = $('#new-molecule');
                     modal.find('.modal-title').text(showMolecule);
-
+                    document.getElementById("molecule-img").src=molecules[i].imgsrc;
+                    document.getElementById("molecule-fact").innerHTML=molecules[i].fact;
+                    document.getElementById("molecule-formula").innerHTML="Formula: "+molecules[i].formula;
+                    document.getElementById("molecule-mass").innerHTML="Molar Mass: "+molecules[i].mass+ " g/mol";
+                    document.getElementById("fact-src").innerHTML='<a href="'+molecules[i].factsrc+'">Source</a>';
 
                 }
             }//end molecules iteration
