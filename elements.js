@@ -115,68 +115,79 @@ var formaldehyde = {
 
 var ammonia = {
     recipe: [nitrogen, hydrogen, hydrogen],
+    imgsrc: "ammonia.png",
     formula: "NH3",
     name: "Ammonia"
 };
 
 var hydrazine = {
     recipe: [nitrogen, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen],
+    imgsrc: "hydrazine.png",
     formula: "N2H4",
     name: "Hydrazine"
 };
 
 var dinitrogenMonoxide = {
     recipe: [nitrogen, nitrogen, oxygen],
+    imgsrc: "dinitrogen monoxide.png",
     formula: "N2O",
     name: "Dinitrogen Monoxide"
 };
 
-var ethanol = {
-    recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, oxygen],
-    formula: "C2H6O",
-    name: "Ethanol"
-};
+//var ethanol = {
+//    recipe: [carbon, carbon, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen, oxygen],
+//    imgsrc: "ethanol.png",
+//    formula: "C2H6O",
+//    name: "Ethanol"
+//};
 
 var formicAcid = {
     recipe: [carbon, hydrogen. hydrogen, oxygen, oxygen],
+    imgsrc: "formic acid.png",
     formula: "CH2O2",
     name: "Formic Acid"
 };
 
 var methanol = {
     recipe: [carbon, hydrogen, hydrogen, hydrogen, oxygen, hydrogen],
+    imgsrc: "methanol.png"
     formula: "CH3OH",
     name: "Methanol"
 };
 
 var molecularHydrogen = {
     recipe: [hydrogen, hydrogen],
+    imgsrc: "molecularhydrogen.png",
     formula: "H2",
     name: "Molecular Hydrogen"
 };
 
-var molecualarNitrogen = {
+var molecularNitrogen = {
     recipe: [nitrogen, nitrogen],
+    imgsrc: "molecularnitrogen.png",
     formula: "N2",
     name: "Molecular Nitrogen"
 };
 
 var molecularOxygen = {
     recipe: [oxygen, oxygen],
+    imgsrc: "molecularoxygen.png",
     formula: "O2",
     name: "Molecular Oxygen"
 };
 
 var ozone = {
     recipe: [oxygen, oxygen, oxygen],
+    imgsrc: "ozone.png",
     formula: "O3",
     name: "Ozone"
 };
 
 var urea = {
     recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen],
+    imgsrc: "urea.png",
     formula: "NH2CONH2",
     name: "Urea"
 };
 
-var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, ethanol, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
+var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, hydrazine, dinitrogenMonoxide, formicAcid, methanol, molecualarNitrogen, molecularHydrogen, molecularOxygen, ozone, urea];
