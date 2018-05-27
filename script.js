@@ -8,6 +8,8 @@ var selectedAtom;
 var match=false;
 var success=false;
 
+var discovered=[];
+
 
     var atomSlots=["one","two","three","four"];
 
@@ -137,15 +139,29 @@ var success=false;
                     $('#new-molecule').modal('show');
 
                     var showMolecule=molecules[i].name;
-
                     var modal = $('#new-molecule');
-                    modal.find('.modal-title').text(showMolecule);
+
+                    var boolDiscovered=false;
+
+                    for(q=0;q<discovered.length;q++){
+                        if(discovered[q]==molecules[i]){
+                            document.getElementById("molecule-title").innerHTML=molecules[i].name+" (Found)";
+                            boolDiscovered=true;
+                            break;
+                        }
+                    }
+                    if(!boolDiscovered){
+                        document.getElementById("molecule-title").innerHTML=molecules[i].name+" (New!)";
+                    }
+
                     document.getElementById("molecule-img").src=molecules[i].imgsrc;
                     document.getElementById("molecule-fact").innerHTML=molecules[i].fact;
                     document.getElementById("molecule-formula").innerHTML="Formula: "+molecules[i].formula;
                     document.getElementById("molecule-mass").innerHTML="Molar Mass: "+molecules[i].mass+ " g/mol";
                     document.getElementById("fact-src").innerHTML='<a target="_blank" href="'+molecules[i]
                     .factsrc+'">Source</a>';
+
+                    discovered.push(molecules[i]);
 
                 }
             }//end molecules iteration
