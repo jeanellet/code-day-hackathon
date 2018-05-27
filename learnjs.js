@@ -3,15 +3,13 @@ $(document).ready(function(){
 
 var isFound =[];
 for (z=0; z < molecules.length; z++){
-    for (j=0; j < 100; j++){
-        if (molecules[z].name==localStorage.getItem("discovered-"+j)){
-            console.log("AAA");
-            isFound.push(true);
-            break;
-        };
-    };
-    console.log("u dont fuked up");
-    isFound.push(false);
+    if (molecules[z].name==localStorage.getItem("discovered-"+z)){
+        isFound.push(true);
+    }
+    else{
+        isFound.push(false);
+    }
+
 };
     var container=document.getElementById("card-container");
         var newGrid=document.createElement("div");
