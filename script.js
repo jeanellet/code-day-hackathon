@@ -1,6 +1,6 @@
 
-var discovered=[];
 
+var discovered=[];
 $(document).ready(function(){
 var amountSelected=1;
 var selectedArray=[];
@@ -31,6 +31,8 @@ var success=false;
         newInnerDiv.appendChild(newImg);
         currentDiv.appendChild(newInnerDiv);
     }
+
+    $('[data-toggle="tooltip"]').tooltip();
 
 
     $(".atomImg").click(function(){
@@ -162,7 +164,6 @@ var success=false;
                     .factsrc+'">Source</a>';
 
                     discovered.push(molecules[i]);
-                    localStorage.setItem("discovered-" + i, molecules[i].name);
 
                 }
             }//end molecules iteration
