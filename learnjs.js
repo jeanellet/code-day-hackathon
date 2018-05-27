@@ -42,4 +42,50 @@ $(document).ready(function(){
     container.appendChild(newGrid);
 };
 
+
+var moleculeContainer=document.getElementById("molecule-container");
+    var newGrid2=document.createElement("div");
+        newGrid2.className = "row card-group";
+        newGrid2.style = "height:75%";
+    for (x=0; x < molecules.length; x++){
+ var newColumn2=document.createElement("div");
+                newColumn2.className = "col-lg-3 col-md-6";
+                var newCard2=document.createElement("div");
+                     newCard2.className = "card";
+                    var newImage2=document.createElement("img");
+                         newImage2.className = "card-img-top";
+                         newImage2.src = molecules[x].imgsrc;
+                         newImage2.style.width = "100%";
+                         newImage2.style.margin = "auto";
+                    newCard2.appendChild(newImage2);
+                    var newCardBody2=document.createElement("div");
+                         newCardBody2.className = "card-body";
+                        var newTitle2=document.createElement("h5");
+                             newTitle2.className = "card-title";
+                             newTitle2.innerHTML = molecules[x].name;
+                        var newParagraph2=document.createElement("p");
+                             newParagraph2.className = "card-text";
+                             newParagraph2.innerHTML = molecules[x].fact;
+                    newCardBody2.appendChild(newTitle2);
+                    newCardBody2.appendChild(newParagraph2);
+                newCard2.appendChild(newCardBody2);
+                    var newUList2=document.createElement("ul");
+                        newUList2.className = "list-group list-group-flush";
+                        var newList3=document.createElement("li");
+                            newList3.className = "list-group-item";
+                            newList3.innerHTML = "Molecular Formula: " + molecules[x].formula;
+                        var newList4=document.createElement("li");
+                            newList4.className = "list-group-item";
+                            newList4.innerHTML = "Molar Mass: " + molecules[x].mass + " g/mol";
+                    newUList2.appendChild(newList3);
+                    newUList2.appendChild(newList4);
+                newCard2.appendChild(newUList2);
+            newColumn2.appendChild(newCard2);
+        newGrid2.appendChild(newColumn2);
+    moleculeContainer.appendChild(newGrid2);
+    }
+
+
+
+
 });
