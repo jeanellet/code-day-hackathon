@@ -126,7 +126,6 @@ var hydrazine = {
 var dinitrogenMonoxide = {
     recipe: [nitrogen, nitrogen, oxygen],
     formula: "N2O",
-
 };
 
 var ethanol = {
@@ -167,7 +166,7 @@ var ozone = {
 
 var urea = {
     recipe: [nitrogen, hydrogen, hydrogen, carbon, oxygen, nitrogen, hydrogen, hydrogen]
-    formula: "NH2CONH2"
+    formula: "NH2CONH2",
 };
 
 var molecules = [water, hydrogenPeroxide, carbonDioxide, carbonMonoxide, methane, ethane, formaldehyde, ammonia, diazane
