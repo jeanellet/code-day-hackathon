@@ -227,7 +227,7 @@ var urea = {
 
 //ADVANCED
 
-var tricarbonMonoxide{
+var tricarbonMonoxide= {
     recipe: [carbon, carbon, carbon, oxygen],
     imgsrc: "tricarbon monoxide.png",
     formula: "C3O",
@@ -235,7 +235,7 @@ var tricarbonMonoxide{
     name: "Tricarbon Monoxide"
 };
 
-var propynal{
+var propynal = {
     recipe: [carbon, carbon, carbon, hydrogen, hydrogen, oxygen],
     imgsrc: "propynal.png",
     formula: "C3H2O",
@@ -243,7 +243,7 @@ var propynal{
     name: "Propynal"
 };
 
-var nitroxyl{
+var nitroxyl = {
     recipe: [nitrogen, hydrogen, oxygen],
     imgsrc: "nitroxyl.png",
     formula:"NHO",
@@ -251,7 +251,7 @@ var nitroxyl{
     name: "Nirtoxyl"
 };
 
-var methylamine{
+var methylamine={
     recipe: [carbon, nitrogen, hydrogen, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "methylamine.png",
     formula:"CNH5",
@@ -259,7 +259,7 @@ var methylamine{
     name: "Methylamine"
 };
 
-var hydrogenCyanide {
+var hydrogenCyanide ={
     recipe: [carbon, nitrogen, hydrogen],
     imgsrc: "hydrogen cyanide.png",
     formula: "CNH",
@@ -267,7 +267,7 @@ var hydrogenCyanide {
     name: "Hydrogen Cyanide"
 };
 
-var glycolaldehyde{
+var glycolaldehyde={
     recipe: [carbon, carbon, oxygen, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "glycolaldehyde.png",
     formula: "C2O2H4",
@@ -275,7 +275,7 @@ var glycolaldehyde{
     name: "Glycolaldehyde"
 };
 
-var fulmunicAcid{
+var fulmunicAcid={
     recipe: [carbon, nitrogen, oxygen, hydrogen],
     imgsrc: "fulmunic acid.png",
     formula: "CNOH",
@@ -283,7 +283,7 @@ var fulmunicAcid{
     name: "Fulmunic Acid"
 };
 
-var formamide{
+var formamide={
     recipe: [carbon, nitrogen, oxygen, hydrogen, hydrogen, hydrogen],
     imgsrc: "formamide.png",
     formmula: "CNOH3",
@@ -291,7 +291,7 @@ var formamide{
     name: "Formamide"
 };
 
-var ethanimine{
+var ethanimine={
     recipe: [carbon, carbon, nitrogen, oxygen, oxygen, oxygen, oxygen, oxygen],
     imgsrc: "ethanimine.png",
     formula: "C2NO5",
@@ -299,7 +299,7 @@ var ethanimine{
     name: "Ethanimine"
 };
 
-var cyanoacetylene{
+var cyanoacetylene={
     recipe: [carbon, carbon, carbon, nitrogen, hydrogen],
     imgsrc: "cyanoacetylene.png",
     formula: "HC3N",
@@ -307,7 +307,7 @@ var cyanoacetylene{
     name: "Cyanoacetylene"
 };
 
-var cyanamide{
+var cyanamide={
     recipe: [carbon, nitrogen, nitrogen, hydrogen, hydrogen],
     imgsrc: "cyanamide.png",
     formula: "CN2H2",
@@ -315,7 +315,7 @@ var cyanamide{
     name: "Cyanamide"
 };
 
-var acrylonitrile {
+var acrylonitrile= {
     recipe: [carbon, carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     imgsrc:"acrylonitrile.png,",
     formula: "C3NH3",
@@ -323,7 +323,7 @@ var acrylonitrile {
     name: "Acrylonitrile"
 };
 
-var acrolein{
+var acrolein={
     recipe: [carbon, carbon, carbon, oxygen, hydrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "acrolein.png",
     formula: "C3OH4",
@@ -331,7 +331,7 @@ var acrolein{
     name: "Acrolein"
 };
 
-var acetylene{
+var acetylene={
     recipe: [carbon, carbon, hydrogen, hydrogen],
     imgsrc: "acetylene.png",
     formula: "C2H2",
@@ -339,7 +339,7 @@ var acetylene{
     name: "Acetylene"
 };
 
-var acetonitrile{
+var acetonitrile={
     recipe: [carbon, carbon, nitrogen, hydrogen, hydrogen, hydrogen],
     imgsrc: "acetonitrile.png",
     formula: "C2NH3",
