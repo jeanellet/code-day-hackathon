@@ -33,7 +33,7 @@ $(document).ready(function(){
                             newList.innerHTML = "Atomic Number: " + array[i].anum;
                         var newList2=document.createElement("li");
                             newList2.className = "list-group-item";
-                            newList2.innerHTML = "Molar Mass: " + array[i].mass;
+                            newList2.innerHTML = "Molar Mass: " + array[i].mass + " g/mol";
                     newUList.appendChild(newList);
                     newUList.appendChild(newList2);
                 newCard.appendChild(newUList);
